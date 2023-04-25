@@ -7,7 +7,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <OptionsWrapper>
       {options.map(btnName => (
         <Button
-          key={shortid.generate()}
+          key={btnName}
           type="button"
           onClick={() => onLeaveFeedback(btnName)}
         >
