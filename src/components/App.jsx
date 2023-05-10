@@ -25,7 +25,8 @@ export const App = () => {
     return Math.ceil((good / this.countTotalFeedback()) * 100) || 0;
   };
 
-  render() {
+  render() 
+  {
     const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedback();
     const positivePercentage = this.countPositiveFeedbackPercentage();
